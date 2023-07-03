@@ -1,0 +1,7 @@
+:root{
+    --main-bg: #fefefe;;
+    --dark: rgba(0, 0, 0, 0.75);
+    --light-dark: rgba(0, 0, 0, 0.5);
+    --green: #7DBA28;
+    --light-green: rgba(125, 186, 40, 0.75);
+}

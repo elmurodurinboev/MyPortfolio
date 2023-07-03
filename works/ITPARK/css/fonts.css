@@ -1,0 +1,85 @@
+/* Font Gilroy */
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-RegularItalic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face { 
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy/Gilroy-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+/* Font Roboto */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+/* Font Inter */
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-Bold.ttf);
+    font-weight: 700;
+}
+
+
+
+
+
+
