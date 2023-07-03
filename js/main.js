@@ -147,3 +147,16 @@
 
 
 }());
+
+function sendEmail() {
+  var name = document.getElementById("fname").value;
+  var email = document.getElementById("femail").value;
+  var subject = document.getElementById("fsubject").value;
+  var message = document.getElementById("fmessage").value;
+
+  var mailtoLink = "mailto:ur1nboev812@gmail.com" +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message);
+
+  window.location.href = mailtoLink;
+}

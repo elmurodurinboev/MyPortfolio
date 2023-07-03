@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-ExtraLight.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter/Inter-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/Open_Sans/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+}
