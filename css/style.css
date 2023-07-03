@@ -1290,9 +1290,9 @@ input[type="text"] {
   opacity: 0;
 }
 
-.f-just-center{
-  display: flex;
-  justify-content: center;
-}
+/* .f-just-center{
+  
+  margin: 0 auto;
+} */
 
 /*# sourceMappingURL=style.css.map */
