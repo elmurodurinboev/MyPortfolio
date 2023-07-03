@@ -1,0 +1,42 @@
+{
+  "menu": [
+    {
+      "img": "img/tabs/1.png",
+      "alt": "vegy",
+      "title": "Plan 'Usual'",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 10
+    },
+    {
+      "img": "img/tabs/2.jpg",
+      "alt": "premium",
+      "title": "Plan 'Premium'",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 20
+    },
+    {
+      "img": "img/tabs/3.jpg",
+      "alt": "vip",
+      "title": "Plan 'VIP'",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit nesciunt facere, sequi exercitationem praesentium ab cupiditate beatae debitis perspiciatis itaque quaerat id modi corporis delectus ratione nobis harum voluptatum in.",
+      "price": 30
+    }
+  ],
+  "request": [
+    {
+      "name": "Elmurod",
+      "phone": "+998900908890",
+      "id": 1
+    },
+    {
+      "name": "Elmurod Urinboev",
+      "phone": "+998 (97) 525-75-80",
+      "id": 2
+    },
+    {
+      "name": "Mahmudjon",
+      "phone": "8972232001",
+      "id": 3
+    }
+  ]
+}
