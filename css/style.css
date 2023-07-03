@@ -17,6 +17,8 @@ body {
   line-height: 1.7;
   color: #4d4d4d;
   background: #fff;
+   
+
 }
 
 #page {
@@ -1290,9 +1292,10 @@ input[type="text"] {
   opacity: 0;
 }
 
-/* .f-just-center{
-  
-  margin: 0 auto;
-} */
+.white-line {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
