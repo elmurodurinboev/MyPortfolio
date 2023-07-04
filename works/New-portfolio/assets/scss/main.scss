@@ -1,0 +1,429 @@
+@import './mixins';
+@import './normalize';
+@import './variables';
+
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  color: #FF6464;;
+}
+
+// Start HEADER
+.header{
+  // Start NAVBAR
+  .site-nav{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 110px;
+    @media (max-width:650px) {
+      margin-bottom: 50px;
+    }
+    &-menu{
+      display: none;
+      @media (max-width:400px) {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+      }
+      &__link{
+        width: 100%;
+        text-align: end;
+        &-icon{
+          width: 30px;
+          height: 18px;
+        }
+      }
+    }
+
+    &-navlist{
+      @include flex( center , flex-end);
+      @include adaptive-value('font-size', 20, 16);
+      margin-top: 30px;
+      @include font(29.38px , 500);
+    
+      &-item:not(:last-child){
+        margin-right: 30px;
+      }
+      @media (max-width:400px) {
+        display: none;
+      }
+
+    }
+
+  }
+
+  &-des {
+    @include flex(flex-start , space-between);
+
+    @media (max-width:650px) {
+      @include direction(column-reverse);
+    }
+
+    &__left{
+      width: 56%;
+      padding-top: 20px;
+      @media (max-width:650px) {
+        width: 100%;
+        text-align: center;
+      }
+
+      &-title{
+        @include font( 60px , 700);
+        @include adaptive-value('font-size', 44, 32);
+        margin-bottom: 40px;
+        width: 100%
+      }
+
+      &-text {
+        @include font(23.5px , 400);
+        @include adaptive-value('font-size', 16, 16);
+        margin-bottom: 38px;
+      }
+
+      &-button{
+        background-color: $main-button-color;
+        padding: 9px 20px;
+        @include font( 29px , 500);
+        @include adaptive-value('font-size', 20, 20);
+        color: #fff;
+        border-radius: 2px;
+      }
+
+    }
+    &__right{
+      width: 33%;
+      margin: 0;
+      position: relative;
+
+      @media (max-width:800px){
+        width: 35%;
+        margin-right: 20px;
+      }
+
+      @media (max-width:650px) {
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+
+      &-item {
+        z-index: 1;
+        width: 243px;
+        height: 243px;
+        overflow: hidden;
+        border-radius: 50%;
+        // position: relative;
+
+        &-img{
+          width: 100%;
+          height: 100%;
+        }
+        &::before{
+          content: '';
+          width: 243px;
+          height: 243px;
+          position: absolute;
+          background-color: #EDF7FA;
+          border-radius: 50%;
+          top: 13px;
+          left: -5px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  &-banner {
+    width: 100%;
+    background-color: #EDF7FA;
+    margin-top: 70px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+
+    &__title {
+      @include flex(center , space-between);
+      margin-top: 10px;
+
+      &-recent{
+        @include font( 60px , 400);
+        @include adaptive-value('font-size', 22, 18);
+      }
+
+      &-link{
+        @include font(24px , 400);
+        @include adaptive-value('font-size', 16, 14);
+        color: #00A8CC;
+      }
+    }
+
+    &__card{
+      @include flex(center , space-between);
+      @media (max-width:700px) {
+        @include direction(column);
+      }
+      &-item {
+        width: 48%;
+        padding: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        border-radius: 4px;
+        @media (max-width:700px) {
+          width: 100%;
+          &:not(:last-child){
+            margin-bottom: 20px;
+          }
+        }
+
+        &__title{
+          @include font( 38px , 700);
+          @include adaptive-value('font-size', 24, 22);
+          margin-bottom: 17px;
+        }
+        &__date {
+          @include font(26px , 400);
+          @include adaptive-value('font-size', 18, 16);
+          padding-right: 30px;
+          border-right: 1px solid #000000;
+        }
+
+        &__design {
+          @include font(26px , 400);
+          @include adaptive-value('font-size', 18, 16);
+          margin-left: 26px;
+        }
+
+        &__text{
+          @include font(23.5px , 400);
+          @include adaptive-value('font-size', 16, 16);
+          margin-top: 15px;
+        }
+
+      }
+    }
+  }
+
+}
+
+//Start MAIN 
+
+.main{
+  width: 100%;
+  // Start WORKS
+  .works{
+    @include direction(column);
+    width: 100%;
+
+    &-title{
+      @include font(60px , 400);
+      @include adaptive-value('font-size', 22, 18);
+      // margin-top: 25px;
+    }
+
+    &-item {
+      display: flex;
+      border-bottom: 1px solid #E0E0E0;
+      padding: 15px 10px 15px 0;
+      width: 100%;
+      gap: 20px;
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+
+      @media (max-width:750px) {
+        @include direction(column);
+      }
+      &__link{
+        width: 100%;
+      }
+
+
+      &__img{
+        padding: 0;
+        margin-top: 10px;
+        width: 246px;
+        height: 180px;
+        border-radius: 6px;
+        @include flex (center , unset);
+
+        @media (max-width:750px) {
+          width: 100%;
+          height: max-content;
+        }
+
+        &-element{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__des{
+        flex: 1;
+        margin-top: 0;
+
+        &-title {
+          @include font(44px , 700);
+          @include adaptive-value('font-size', 30, 24);
+          padding: 0;
+          margin-bottom: 8px;
+          @media (max-width:750px) {
+          margin-bottom: 0;
+          }
+        }
+
+        &-year{
+          margin-bottom: 10px;
+
+          @media (max-width:750px) {
+            margin-bottom: 0;
+            }
+
+          &-date{
+            padding: 0px 10px;
+            background-color: #142850;
+            border-radius: 16px;
+            color: #fff;
+            @include font(60px , 700);
+            @include adaptive-value('font-size', 18, 16);
+            margin-right: 25px;
+          }
+          &-major {
+            color: #8695A4;
+            @include font(29.38px , 400);
+            @include adaptive-value('font-size', 20, 16);
+          }
+
+        }
+
+        &-text {
+          @include font(24px , 400);
+          font-size: 16px;
+        }
+
+      }
+
+    }
+
+  }
+
+  &-work-title{
+    @include adaptive-value('font-size', 44, 30);
+    @include font(60px , 700);
+  }
+
+}
+
+// Start FOOTER
+
+.footer{
+  @include direction(column);
+  align-items: center;
+  margin-top: 80px;
+  padding: 50px 0;
+  &-icon {
+    @include flex(center , center);
+    gap: 35px;
+    margin-bottom: 30px;
+    &__item{
+      &-icon{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  &-text{
+    text-align: center;
+    &__item{
+      font-size: 14px;
+      @include font(20.56px , 400);
+    }
+  }
+}
+
+// START BLOG HTML==========================================
+.blog-title {
+  @include adaptive-value('font-size', 44, 30);
+  margin-bottom: 50px;
+
+}
+
+.blog-card{
+  @include direction(column);
+  &__item{
+    &:not(:first-child){
+      margin-top: 30px;
+    }
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0 0 29px 0;
+    &-title{
+      @include font(30px , 500);
+      @include adaptive-value('font-size', 30, 26);
+
+    }
+    &-express{
+      color: #8695A4;
+    }
+  }
+}
+
+// START WORKS HTML==========================================
+
+
+
+// START WORKS DETAIL HTML==========================================
+
+
+.dashboards{
+  &-title{
+    @include adaptive-value('font-size', 34, 30);
+    width: 55%;
+    @media (max-width:600px) {
+      width: 100%;
+    }
+  }
+
+  &-date {
+    &__year{
+      background-color: #FF6464;
+      border-radius: 16px;
+      color: #fff;
+      line-height: 60px;
+      font-weight: 700;
+      font-size: 18px;
+      margin-right: 25px;
+      padding: 0px 10px;
+    }
+    &__des{
+      @include font(29.38px , 400);
+      @include adaptive-value('font-size', 20, 16);
+      color: #21243d;
+    }
+  }
+
+  &-img{
+    margin-top: 35px;
+    max-width: 700px;
+    &:first-of-type{
+      margin-bottom: 50px;
+    }
+    @media (max-width:700px) {
+      width: 100%;
+    }
+  }
+
+  &-heading{
+    @include adaptive-value('font-size', 24, 20);
+    margin-bottom: 20px;
+  }
+  
+
+}

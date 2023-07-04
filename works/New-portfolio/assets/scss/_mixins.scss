@@ -1,0 +1,42 @@
+@mixin flex($align, $justify){
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin font($line , $wheight)
+ {
+//    font-size: $size;
+   line-height: $line;
+   font-weight: $wheight;  
+}
+
+@mixin direction($direct){
+    display: flex;
+    flex-direction: $direct;
+
+    @if ($direct=='row') {
+        flex-wrap: wrap;
+    }
+}
+
+@mixin media($width){
+    @media (max-width: $width){
+        @content
+    }
+}
+
+
+$maxWidth: 858;
+$maxWidthContainer: 1200;
+@mixin adaptive-value($property, $startSize, $minSize) {
+    $addSize: $startSize - $minSize;
+
+        #{$property}: $startSize + px;
+        @media (max-width:#{$maxWidthContainer + px}) {
+            #{$property}: calc(
+                #{$minSize + px} + #{$addSize} *
+                    ((100vw - 320px) / #{$maxWidthContainer - 320})
+            );
+        }
+}
